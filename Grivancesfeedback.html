@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Seva</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #003366;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .header {
+            background-color: #ffcc00;
+            padding: 10px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .action-buttons .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .header img {
+            max-height: 80px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer .social-icons img {
+            width: 32px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand">
+            <img src="pass.png" alt="Logo" width="45px" height="60px"> Passport Application
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Grivancesfeedback.html">Grievance/Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header text-center">
+        <img src="satyamev jayete.png" alt="Logo">
+        <h1>Passport Seva</h1>
+        <h2>PSP Division</h2>
+        <h3>Ministry of External Affairs, Government of India</h3>
+    </div>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="action-buttons">
+                    <button class="btn btn-danger" onclick="location.href='Newuserregistration.html'">New User
+                        Registration</button>
+                    <button class="btn btn-success" onclick="location.href='Existinguserlogin.html'">Existing User
+                        Login</button>
+                    <button class="btn btn-info" onclick="location.href='AppointmentAvail.html'">Check Appointment
+                        Availability</button>
+                    <button class="btn btn-warning" onclick="location.href='TrackApplication.html'">Track Application
+                        Status</button>
+                </div>
+                <div class="info-box">
+                    <h5>National Call Centre</h5>
+                    <p><strong>1800-258-1800</strong></p>
+                    <div class="form-group">
+                        <label for="passportOffice">Passport Office Page</label>
+                        <select class="form-control" id="passportOffice">
+                            <option>---Passport Office---</option>
+                            <option value="">Pune</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Patna</option>
+                            <option value="">Bhopal</option>
+                            <option value="">Indore</option>
+                            <option value="">Jammu</option>
+                            <option value="">Jaipur</option>
+                            <option value="">Hydrabad</option>
+                            <option value="">Kolkata</option>
+                            <!-- Add options here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="missionPost">Mission/Post Page</label>
+                        <select class="form-control" id="missionPost">
+                            <option>---Region/Country---</option>
+                            <option>India</option>
+                            <option>bangladesh</option>
+                            <option>Nepal</option>
+                            <option>Pakistan</option>
+                            <option>China</option>
+                            <!-- Add options here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="officialUsers">Login for Official Users</label>
+                        <select class="form-control" id="officialUsers">
+                            <option>---Official Users---</option>
+                            <option>ISP Nashik</option>
+                            <option>Immigration</option>
+                            <option>Police</option>
+                            <option>CCE</option>
+                            <option>India Post</option>
+                            <!-- Add options here -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="container main-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="info-box">
+                                <h2>Grievance/Feedback</h2>
+                                <p>If you have already applied for Passport or related services, please <a
+                                        href="TrackApplication.html">click here</a> or call on
+                                    <strong>1800-258-1800</strong> to check the
+                                    status of your application.</p>
+                                <p>To register a Grievance/Feedback, <a href="Registergrivances.html">Click here</a></p>
+                                <p>To view the status of registered Grievance/Feedback, <a href="#">Click here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h4>Before You Apply</h4>
+                    <ul>
+                        <li><a href="gettingstarted.html">Getting Started</a></li>
+                        <li><a href="TatkalPassport.html">Tatkal Passport</a></li>
+                        <li><a href="passports_act.pdf">Passport Act and Rules</a></li>
+                        <li><a href="ApplicationformInstructionBooklet-V3.0.pdf">Instructions Booklet</a></li>
+                        <li><a href="pskMap.pdf">All India Network of Passport Services</a></li>
+                        <li><a href="Public_Advisory.pdf">Public Advisory</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>© Content Owned by Ministry of External Affairs, Government of India</p>
+                    <p>Site Maintained by Pradeep Singh.</p>
+                    <p>Last Updated on 16/06/2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add JavaScript functionality if needed
+        });
+    </script>
+</body>
+
+</html>

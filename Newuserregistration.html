@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passport Seva - User Registration</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #003366;
+    }
+
+    .navbar a {
+      color: white !important;
+    }
+
+    .header {
+      background-color: #ffcc00;
+      padding: 10px;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+
+    .form-section {
+      margin-top: 20px;
+    }
+
+    .info-box {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .header img {
+      max-height: 80px;
+      margin-right: 10px;
+    }
+
+    .form-group .required::after {
+      content: "*";
+      color: red;
+      margin-left: 5px;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .social-icons img {
+      width: 32px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand">
+      <img src="pass.png" alt="Logo" width="45px" height="60px"> Passport Application
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Grivancesfeedback.html">Grievance/Feedback</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header text-center">
+    <img src="satyamev jayete.png" alt="Logo">
+    <h1>Passport Seva</h1>
+    <h2>PSP Division</h2>
+    <h3>Ministry of External Affairs, Government of India</h3>
+  </div>
+
+  <div class="container main-content">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="info-box">
+          <h5>Information Corner</h5>
+          <ul>
+            <li><a href="gettingstarted.html">Getting Started</a></li>
+            <li><a href="passports_act.pdf">Passport Act and Rules</a></li>
+            <li><a href="https://locator.csccloud.in/">Locate Common Service Centers</a></li>
+            <li><a href="AppointmentAvail.html">Appointment Availability Status</a></li>
+            <li><a href="https://portal2.passportindia.gov.in/AppOnlineProject/online/appointment">Tatkaal
+                    Appointment Opening Time</a></li>
+            <li><a href="ApplicationformInstructionBooklet-V3.0.pdf">Instructions Booklet</a></li>
+            <li><a href="#">Fee Calculator</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="Grivancesfeedback.html">Grievance/Feedback</a></li>
+            <li><a href="#">Quick Guides</a></li>
+            <li><a href="#">Track Grievance Status</a></li>
+            <li><a href="#">Information</a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="col-md-9 form-section">
+        <h2>User Registration</h2>
+        <p>
+          <strong>Important Information:</strong> Passport application can be processed at any PSK/POPSK/PSLK WITHIN
+          INDIA irrespective of your residential address.
+        </p>
+        <form id="registrationForm">
+          <div class="form-group">
+            <label class="required">Register to apply at</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="applyAt" id="cpvDelhi" value="CPV Delhi">
+              <label class="form-check-label" for="cpvDelhi">CPV Delhi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="applyAt" id="passportOffice" value="Passport Office">
+              <label class="form-check-label" for="passportOffice">Passport Office</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="passportOfficeSelect" class="required">Passport Office</label>
+            <select class="form-control" id="passportOfficeSelect" name="passportOffice">
+              <option value="">----- Select -----</option>
+              <option value="">Pune</option>
+              <option value="">Mumbai</option>
+              <option value="">Patna</option>
+              <option value="">Bhopal</option>
+              <option value="">Indore</option>
+              <option value="">Jammu</option>
+              <option value="">Jaipur</option>
+              <option value="">Hydrabad</option>
+              <option value="">Kolkata</option>
+              <!-- Add options here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="givenName" class="required">Given Name</label>
+            <input type="text" class="form-control" id="givenName" name="givenName" maxlength="45" required>
+          </div>
+          <div class="form-group">
+            <label for="surname" class="required">Surname</label>
+            <input type="text" class="form-control" id="surname" name="surname" maxlength="45" required>
+          </div>
+          <div class="form-group">
+            <label for="dob" class="required">Date of Birth (DD/MM/YYYY)</label>
+            <input type="text" class="form-control" id="dob" name="dob" placeholder="DD/MM/YYYY" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="required">E-mail Id</label>
+            <input type="email" class="form-control" id="email" name="email" maxlength="35" required>
+          </div>
+          <div class="form-group">
+            <label class="required">Do you want your Login Id to be same as E-mail Id?</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="loginSameAsEmail" id="loginSameYes" value="Yes"
+                required>
+              <label class="form-check-label" for="loginSameYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="loginSameAsEmail" id="loginSameNo" value="No">
+              <label class="form-check-label" for="loginSameNo">No</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="loginId" class="required">Login Id</label>
+            <input type="text" class="form-control" id="loginId" name="loginId" required>
+          </div>
+          <div class="form-group">
+            <label for="password" class="required">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword" class="required">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="hintQuestion" class="required">Hint Question</label>
+            <select class="form-control" id="hintQuestion" name="hintQuestion" required>
+              <option value="">----- Select -----</option>
+              <!-- Add options here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="hintAnswer" class="required">Hint Answer</label>
+            <input type="text" class="form-control" id="hintAnswer" name="hintAnswer" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="reset" class="btn btn-secondary">Clear</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col text-center">
+          <p>© Content Owned by Ministry of External Affairs, Government of India</p>
+          <p>Site Maintained by Pradeep Singh.</p>
+          <p>Last Updated on 16/06/2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      // Add form validation and submission logic here
+      alert('Form submitted!');
+    });
+  </script>
+</body>
+
+</html>
